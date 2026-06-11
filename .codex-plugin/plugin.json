@@ -1,7 +1,7 @@
 {
   "name": "hospitality-os-plugin",
-  "version": "0.3.0",
-  "description": "Reusable Codex operating system for hospitality sales, outreach, events, finance, marketing, operations, training, and guest experience workflows, with a BOSSA Asado i Mar specialization layer for fire-grill menus, tourist experiences, WhatsApp sales, and operating dashboards.",
+  "version": "0.4.0",
+  "description": "Reusable Codex operating system for hospitality sales, outreach, events, finance, marketing, operations, training, guest experience, and multilingual video production, with a BOSSA Asado i Mar specialization layer.",
   "author": {
     "name": "Hospitality OS"
   },
@@ -19,6 +19,10 @@
     "events",
     "investor",
     "social media",
+    "video production",
+    "digital avatar",
+    "HeyGen",
+    "multilingual video",
     "menu costing",
     "inventory",
     "training",
@@ -31,8 +35,8 @@
   ],
   "interface": {
     "displayName": "Hospitality OS",
-    "shortDescription": "Run sales, delivery, market, revenue, and guest workflows for hospitality brands.",
-    "longDescription": "Hospitality OS gives Codex reusable skills for restaurants, boutique hotels, beach clubs, catering teams, tourist experiences, and BOSSA Asado i Mar operations.",
+    "shortDescription": "Run sales, delivery, market, revenue, guest, and video workflows for hospitality brands.",
+    "longDescription": "Hospitality OS gives Codex reusable skills for restaurants, boutique hotels, beach clubs, catering teams, tourist experiences, multilingual video production, and BOSSA Asado i Mar operations.",
     "developerName": "Hospitality OS",
     "category": "Productivity",
     "capabilities": [
@@ -48,6 +52,7 @@
       "Review this menu for revenue upside.",
       "Draft a partnership outreach message for a local hotel.",
       "Build a catering quote for a 40-guest event.",
+      "Create a multilingual digital-avatar video package for a hospitality campaign.",
       "Create a new fire-grill dish for BOSSA Asado i Mar.",
       "Build a Fire Box take-home bundle for BOSSA.",
       "Draft a WhatsApp reply for a BOSSA reservation request.",
