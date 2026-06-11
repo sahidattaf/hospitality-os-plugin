@@ -1,7 +1,7 @@
 {
   "name": "hospitality-os-plugin",
-  "version": "0.1.0",
-  "description": "Reusable Codex operating system for hospitality sales, delivery, revenue, content, and guest experience workflows.",
+  "version": "0.2.0",
+  "description": "Reusable Codex operating system for hospitality sales, outreach, events, finance, marketing, operations, training, and guest experience workflows.",
   "author": {
     "name": "Hospitality OS"
   },
@@ -13,7 +13,16 @@
     "hotels",
     "revenue",
     "operations",
-    "concierge"
+    "concierge",
+    "outreach",
+    "catering",
+    "events",
+    "investor",
+    "social media",
+    "menu costing",
+    "inventory",
+    "training",
+    "customer recovery"
   ],
   "interface": {
     "displayName": "Hospitality OS",
@@ -31,7 +40,9 @@
     "defaultPrompt": [
       "Create this week's AI brief for BOSSA.",
       "Build a hospitality SOP from these notes.",
-      "Review this menu for revenue upside."
+      "Review this menu for revenue upside.",
+      "Draft a partnership outreach message for a local hotel.",
+      "Build a catering quote for a 40-guest event."
     ]
   }
 }

@@ -14,7 +14,6 @@ Plugin validation passed
 
 Manual smoke tests:
 
-- Ask each skill's test prompt.
+- Ask each skill's test prompt, including the v0.2 agents (Restaurant Outreach, Hotel Outreach, Catering Sales, Event Booking, Investor Deck, Social Media, Menu Costing, Inventory, Staff Training, Customer Recovery).
 - Confirm the response follows that skill's output format.
 - Confirm BOSSA-specific examples stay grounded in the provided facts.
-

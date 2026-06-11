@@ -2,7 +2,7 @@
 
 Hospitality OS is a local Codex plugin for restaurants, boutique hotels, beach clubs, catering teams, tourist experiences, and BOSSA Asado i Mar operations.
 
-It packages reusable skills for sales, demos, delivery, market intelligence, weekly AI briefs, decision logs, SOPs, reviews, menu engineering, revenue optimization, and AI concierge workflows.
+It packages reusable skills for sales, outreach, events, demos, delivery, market intelligence, weekly AI briefs, decision logs, SOPs, reviews, menu engineering and costing, inventory, revenue optimization, investor materials, social media, staff training, customer recovery, and AI concierge workflows.
 
 ## Included Skills
 
@@ -17,6 +17,19 @@ It packages reusable skills for sales, demos, delivery, market intelligence, wee
 - Menu Engineer
 - Revenue Optimizer
 - AI Concierge
+
+### v0.2 additions
+
+- Restaurant Outreach Agent
+- Hotel Outreach Agent
+- Catering Sales Agent
+- Event Booking Agent
+- Investor Deck Agent
+- Social Media Agent
+- Menu Costing Agent
+- Inventory Agent
+- Staff Training Agent
+- Customer Recovery Agent
 
 ## Structure
 
