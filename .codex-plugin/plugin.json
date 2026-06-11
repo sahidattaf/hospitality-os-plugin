@@ -1,7 +1,7 @@
 {
   "name": "hospitality-os-plugin",
-  "version": "0.2.0",
-  "description": "Reusable Codex operating system for hospitality sales, outreach, events, finance, marketing, operations, training, and guest experience workflows.",
+  "version": "0.3.0",
+  "description": "Reusable Codex operating system for hospitality sales, outreach, events, finance, marketing, operations, training, and guest experience workflows, with a BOSSA Asado i Mar specialization layer for fire-grill menus, tourist experiences, WhatsApp sales, and operating dashboards.",
   "author": {
     "name": "Hospitality OS"
   },
@@ -22,7 +22,12 @@
     "menu costing",
     "inventory",
     "training",
-    "customer recovery"
+    "customer recovery",
+    "bossa",
+    "fire-grill",
+    "Curaçao",
+    "WhatsApp sales",
+    "reservations"
   ],
   "interface": {
     "displayName": "Hospitality OS",
@@ -42,7 +47,11 @@
       "Build a hospitality SOP from these notes.",
       "Review this menu for revenue upside.",
       "Draft a partnership outreach message for a local hotel.",
-      "Build a catering quote for a 40-guest event."
+      "Build a catering quote for a 40-guest event.",
+      "Create a new fire-grill dish for BOSSA Asado i Mar.",
+      "Build a Fire Box take-home bundle for BOSSA.",
+      "Draft a WhatsApp reply for a BOSSA reservation request.",
+      "Build BOSSA's owner dashboard for this week."
     ]
   }
 }

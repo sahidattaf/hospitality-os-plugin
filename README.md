@@ -31,6 +31,19 @@ It packages reusable skills for sales, outreach, events, demos, delivery, market
 - Staff Training Agent
 - Customer Recovery Agent
 
+### v0.3 additions: BOSSA Asado i Mar specialization layer
+
+v0.3 adds a BOSSA-specific layer of agents that apply the Hospitality OS workflows directly to BOSSA Asado i Mar's fire-grill menu, Curaçao tourist audience, WhatsApp-based sales, and day-to-day operating rhythm.
+
+- BOSSA Fire Chef Agent
+- BOSSA Fire Box Agent
+- BOSSA Tourist Experience Agent
+- BOSSA WhatsApp Sales Agent
+- BOSSA Owner Dashboard Agent
+- BOSSA KPI Agent
+- BOSSA Inventory Forecast Agent
+- BOSSA Reservation Agent
+
 ## Structure
 
 - `.codex-plugin/plugin.json` contains the plugin manifest.

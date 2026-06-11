@@ -18,4 +18,11 @@
 - Build a purchase order and flag stockout risks from this week's inventory counts.
 - Create an onboarding training module for this role, including a knowledge check.
 - Draft a service recovery response and resolution offer for this guest complaint.
-
+- Create a new fire-grill dish concept and kitchen spec for BOSSA Asado i Mar.
+- Build a Fire Box take-home bundle for BOSSA, including pricing after delivery fees.
+- Design a tourist-facing experience package for BOSSA aimed at visitors to Curaçao.
+- Draft a WhatsApp reply, upsell, and internal note for a BOSSA reservation inquiry.
+- Build BOSSA's owner dashboard summary for this week's operations.
+- Calculate BOSSA's KPIs for this week and recommend actions for any that are off track.
+- Forecast BOSSA's ingredient needs ahead of a busy weekend and recommend an order plan.
+- Check availability and draft a reservation confirmation or alternative for BOSSA.
