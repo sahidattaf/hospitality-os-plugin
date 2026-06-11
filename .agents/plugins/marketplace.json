@@ -1,0 +1,20 @@
+{
+  "name": "hospitality-os-local",
+  "interface": {
+    "displayName": "Hospitality OS Local"
+  },
+  "plugins": [
+    {
+      "name": "hospitality-os-plugin",
+      "source": {
+        "source": "local",
+        "path": "./plugins/hospitality-os-plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

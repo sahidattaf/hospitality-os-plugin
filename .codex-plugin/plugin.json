@@ -1,0 +1,37 @@
+{
+  "name": "hospitality-os-plugin",
+  "version": "0.1.0",
+  "description": "Reusable Codex operating system for hospitality sales, delivery, revenue, content, and guest experience workflows.",
+  "author": {
+    "name": "Hospitality OS"
+  },
+  "skills": "./skills/",
+  "license": "MIT",
+  "keywords": [
+    "hospitality",
+    "restaurants",
+    "hotels",
+    "revenue",
+    "operations",
+    "concierge"
+  ],
+  "interface": {
+    "displayName": "Hospitality OS",
+    "shortDescription": "Run sales, delivery, market, revenue, and guest workflows for hospitality brands.",
+    "longDescription": "Hospitality OS gives Codex reusable skills for restaurants, boutique hotels, beach clubs, catering teams, tourist experiences, and BOSSA Asado i Mar operations.",
+    "developerName": "Hospitality OS",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Research",
+      "Planning",
+      "Analysis"
+    ],
+    "brandColor": "#0F766E",
+    "defaultPrompt": [
+      "Create this week's AI brief for BOSSA.",
+      "Build a hospitality SOP from these notes.",
+      "Review this menu for revenue upside."
+    ]
+  }
+}
