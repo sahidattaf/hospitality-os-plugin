@@ -1,0 +1,41 @@
+name: Validate Hospitality OS Plugin
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install schema validator
+        run: python -m pip install jsonschema
+      - name: Run Hospitality OS structural checks
+        run: |
+          python plugins/hospitality-os-plugin/scripts/validate_hospitality_plugin.py
+          python plugins/hospitality-os-plugin/scripts/validate_video_fixtures.py
+      - name: Validate video fixtures
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator
+
+          root = Path("plugins/hospitality-os-plugin")
+          schema = json.loads((root / "skills/video-production-operator/schemas/video-job.schema.json").read_text())
+          validator = Draft202012Validator(schema)
+          valid = json.loads((root / "tests/fixtures/video-job-valid.json").read_text())
+          invalid = json.loads((root / "tests/fixtures/video-job-invalid-unauthorized.json").read_text())
+          validator.validate(valid)
+          if not list(validator.iter_errors(invalid)):
+              raise SystemExit("negative fixture unexpectedly passed")
+          print("Video schema fixtures passed.")
+          PY

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Guest Experience Operator"
+  short_description: "Concierge, reviews, and controlled recovery"
+  default_prompt: "Use $guest-experience-operator to draft this guest response and recovery options."
+policy:
+  allow_implicit_invocation: true

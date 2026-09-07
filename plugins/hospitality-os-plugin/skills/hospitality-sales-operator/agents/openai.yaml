@@ -1,0 +1,6 @@
+interface:
+  display_name: "Hospitality Sales Operator"
+  short_description: "Qualify leads and prepare gated outreach"
+  default_prompt: "Use $hospitality-sales-operator to qualify this lead and draft the outreach package."
+policy:
+  allow_implicit_invocation: true

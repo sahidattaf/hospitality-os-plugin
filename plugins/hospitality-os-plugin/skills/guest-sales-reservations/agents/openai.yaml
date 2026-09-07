@@ -1,0 +1,6 @@
+interface:
+  display_name: "Guest Sales and Reservations"
+  short_description: "Prepare safe guest and booking workflows"
+  default_prompt: "Use $guest-sales-reservations to prepare this guest inquiry without confirming it."
+policy:
+  allow_implicit_invocation: true

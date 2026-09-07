@@ -1,0 +1,6 @@
+interface:
+  display_name: "Events and Catering Operator"
+  short_description: "Build gated event and catering packages"
+  default_prompt: "Use $events-catering-operator to prepare this event inquiry and quote."
+policy:
+  allow_implicit_invocation: true

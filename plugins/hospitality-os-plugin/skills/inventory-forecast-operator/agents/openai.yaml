@@ -1,0 +1,6 @@
+interface:
+  display_name: "Inventory and Forecast Operator"
+  short_description: "Forecast stock and prepare gated orders"
+  default_prompt: "Use $inventory-forecast-operator to forecast demand and draft the order plan."
+policy:
+  allow_implicit_invocation: true

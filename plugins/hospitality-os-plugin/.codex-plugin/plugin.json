@@ -1,0 +1,49 @@
+{
+  "name": "hospitality-os-plugin",
+  "version": "0.5.0",
+  "description": "Evidence-controlled hospitality planning, drafting, analysis, and owner-gated execution for restaurants, hotels, events, guest operations, and BOSSA Asado i Mar.",
+  "author": {
+    "name": "GPT Innovation by Attaf",
+    "url": "https://github.com/sahidattaf"
+  },
+  "homepage": "https://github.com/sahidattaf/hospitality-os-plugin",
+  "repository": "https://github.com/sahidattaf/hospitality-os-plugin",
+  "skills": "./skills/",
+  "license": "MIT",
+  "keywords": [
+    "hospitality",
+    "restaurants",
+    "hotels",
+    "bossa",
+    "curacao",
+    "operations",
+    "revenue",
+    "reservations",
+    "events",
+    "menu",
+    "guest-experience",
+    "video-production",
+    "owner-gates",
+    "evidence-control"
+  ],
+  "interface": {
+    "displayName": "Hospitality OS",
+    "shortDescription": "Run evidence-controlled hospitality workflows.",
+    "longDescription": "Hospitality OS gives Codex 12 focused Skills for restaurant, hotel, event, menu, guest, revenue, delivery, training, market, inventory, command-center, and multilingual video workflows. It drafts by default and requires explicit owner gates before external or irreversible actions.",
+    "developerName": "GPT Innovation by Attaf",
+    "category": "Productivity",
+    "capabilities": [
+      "Research",
+      "Planning",
+      "Analysis",
+      "Drafting",
+      "Gated Execution"
+    ],
+    "brandColor": "#0F766E",
+    "defaultPrompt": [
+      "Prepare this week’s verified hospitality owner review.",
+      "Cost and validate this menu product without publishing.",
+      "Qualify this hospitality lead and draft the outreach."
+    ]
+  }
+}

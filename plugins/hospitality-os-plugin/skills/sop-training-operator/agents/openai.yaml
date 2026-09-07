@@ -1,0 +1,6 @@
+interface:
+  display_name: "SOP and Training Operator"
+  short_description: "Build controlled SOPs and training"
+  default_prompt: "Use $sop-training-operator to convert these notes into an SOP and training module."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Menu and Product Operator"
+  short_description: "Design and cost controlled menu products"
+  default_prompt: "Use $menu-product-operator to cost and validate this menu product."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Revenue Optimizer"
+  short_description: "Evidence-based hospitality revenue tests"
+  default_prompt: "Use $revenue-optimizer to identify three measurable revenue experiments."
+policy:
+  allow_implicit_invocation: true

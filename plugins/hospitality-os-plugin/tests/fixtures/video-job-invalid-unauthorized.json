@@ -1,0 +1,16 @@
+{
+  "client": "Example Hotel",
+  "client_type": "hotel",
+  "campaign_name": "Welcome Video",
+  "objective": "guest_communication",
+  "audience": "Arriving guests",
+  "message": "Welcome",
+  "language": "EN",
+  "channel": ["Instagram"],
+  "format": "9:16",
+  "cta": "Book now",
+  "approval_owner": "Owner",
+  "authorized_stage": "Publication",
+  "status": "Published",
+  "unexpected_publication_token": "must fail additionalProperties"
+}

@@ -1,89 +1,88 @@
 # Hospitality OS Plugin
 
-Hospitality OS is a local Codex plugin for restaurants, boutique hotels, beach clubs, catering teams, tourist experiences, and BOSSA Asado i Mar operations.
+Hospitality OS is an evidence-controlled Codex plugin for restaurants, boutique hotels, beach clubs, catering teams, event venues, tourist experiences, and BOSSA Asado i Mar operations.
 
-It packages reusable skills for sales, outreach, events, demos, delivery, market intelligence, weekly AI briefs, decision logs, SOPs, reviews, menu engineering and costing, inventory, revenue optimization, investor materials, social media, multilingual video production, staff training, customer recovery, and AI concierge workflows.
+Version 0.5 consolidates 30 overlapping v0.4 agents into 12 focused Skills. It drafts by default and requires an explicit owner gate before external communication, bookings, financial commitments, production-data changes, publication, deployment, or access changes.
+
+## Repository layout
+
+This repository is a repo-local marketplace root:
+
+```text
+.agents/plugins/marketplace.json
+plugins/hospitality-os-plugin/
+  .codex-plugin/plugin.json
+  skills/
+  references/
+  examples/
+  prompts/
+  scripts/
+  tests/
+```
+
+The marketplace entry resolves to `./plugins/hospitality-os-plugin`.
 
 ## Included Skills
 
-- Sales Operator
-- Demo Producer
-- Delivery Manager
-- Market Intelligence
-- Weekly AI Brief
-- Decision Log
-- SOP Builder
-- Review Generator
-- Menu Engineer
-- Revenue Optimizer
-- AI Concierge
+1. Hospitality Command Center
+2. Hospitality Sales Operator
+3. Events and Catering Operator
+4. Guest Sales and Reservations
+5. Guest Experience Operator
+6. Menu and Product Operator
+7. Inventory and Forecast Operator
+8. Revenue Optimizer
+9. Hospitality Market Intelligence
+10. Hospitality Delivery Manager
+11. SOP and Training Operator
+12. Video Production Operator
 
-### v0.2 additions
+Business-specific modes include generic hospitality, BOSSA Asado i Mar, Sea Horizon Apartments, and a future named client when an authoritative client profile is supplied. Business facts are not hard-coded as current truth.
 
-- Restaurant Outreach Agent
-- Hotel Outreach Agent
-- Catering Sales Agent
-- Event Booking Agent
-- Investor Deck Agent
-- Social Media Agent
-- Menu Costing Agent
-- Inventory Agent
-- Staff Training Agent
-- Customer Recovery Agent
+## Safety model
 
-### v0.3 additions: BOSSA Asado i Mar specialization layer
+- Classify facts as Verified, Owner-provided, Assumption, Conflict, or Missing evidence.
+- Use `BOSSA Menu Items — Master` as the sole editable BOSSA menu source when available.
+- Research, analysis, planning, and drafting do not authorize execution.
+- Require a fresh owner gate before sending, confirming, ordering, paying, publishing, deploying, or changing live data.
+- Verify every material result and stop at the approved boundary.
+- Keep guest, staff, client, investor, and credential data out of this public repository.
 
-v0.3 adds a BOSSA-specific layer of agents that apply the Hospitality OS workflows directly to BOSSA Asado i Mar's fire-grill menu, Curaçao tourist audience, WhatsApp-based sales, and day-to-day operating rhythm.
+Shared policies are in `plugins/hospitality-os-plugin/references/`.
 
-- BOSSA Fire Chef Agent
-- BOSSA Fire Box Agent
-- BOSSA Tourist Experience Agent
-- BOSSA WhatsApp Sales Agent
-- BOSSA Owner Dashboard Agent
-- BOSSA KPI Agent
-- BOSSA Inventory Forecast Agent
-- BOSSA Reservation Agent
+## Connector model
 
-### v0.4 addition: Multilingual Video Production Agent
+The plugin contains Skills, not bundled account access. It can route to Notion, Google Contacts, Gmail, Google Calendar, Google Drive, GitHub, and Vercel only when those connectors are available in the current session and the requested action is authorized.
 
-v0.4 adds a reusable production system for restaurants, hotels, beach clubs, caterers, event venues, and tourist experiences.
-
-- Promotional and social video planning
-- Digital-avatar and HeyGen production packages
-- English, Papiamentu, Dutch, Spanish, Portuguese, and French localization
-- Client and language approval gates
-- Identity and cloned-voice authorization rules
-- Restaurant, hotel, catering, staff-training, recovery, and demo video workflows
-- KPI tracking for views, completion, clicks, leads, bookings, and revenue
-- BOSSA Weekend Fire Box reference implementation
-
-Primary files:
-
-- `skills/video-production-agent/SKILL.md`
-- `skills/video-production-agent/references/`
-- `skills/video-production-agent/templates/`
-- `skills/video-production-agent/schemas/video-job.schema.json`
-- `examples/video-production/`
-- `prompts/video-production-agent.md`
-- `tests/video-production-agent-validation.md`
-
-## Structure
-
-- `.codex-plugin/plugin.json` contains the plugin manifest.
-- `skills/` contains one Codex skill per Hospitality OS workflow.
-- `examples/` contains sample inputs and outputs.
-- `prompts/` contains reusable prompt starters.
-- `tests/` contains validation notes and lightweight checks.
-- `.agents/plugins/marketplace.json` contains repo-local marketplace metadata.
+No WhatsApp, POS, reservation, purchasing, or inventory connector is bundled. For those systems, the plugin prepares drafts or analyzes supplied evidence.
 
 ## Validation
 
-```powershell
-C:\Users\sahid\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe C:\Users\sahid\.codex\skills\.system\plugin-creator\scripts\validate_plugin.py C:\Users\sahid\OneDrive\Documents\hospitality-os-plugin
+From the repository root:
+
+```bash
+python3 /path/to/plugin-creator/scripts/validate_plugin.py plugins/hospitality-os-plugin
+python3 plugins/hospitality-os-plugin/scripts/validate_hospitality_plugin.py
 ```
 
-Expected result:
+Validate each Skill with the Skill Creator quick validator:
 
-```text
-Plugin validation passed
+```bash
+for skill in plugins/hospitality-os-plugin/skills/*; do
+  python3 /path/to/skill-creator/scripts/quick_validate.py "$skill"
+done
 ```
+
+On Windows PowerShell, replace `python3` and helper paths with the installed Codex runtime paths.
+
+CI runs structural validation and JSON fixtures without calling production systems or requiring secrets.
+
+## Local marketplace installation
+
+This is a non-default repo marketplace. Configure the repository marketplace root according to the installed Codex version, then add `hospitality-os-plugin@hospitality-os`. Installation or reinstallation is intentionally outside the v0.5 implementation gate.
+
+After a separately approved reinstall, start a new Codex thread so updated Skills are loaded.
+
+## License
+
+MIT
