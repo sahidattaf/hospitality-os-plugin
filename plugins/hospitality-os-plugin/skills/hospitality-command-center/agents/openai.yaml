@@ -1,0 +1,6 @@
+interface:
+  display_name: "Hospitality Command Center"
+  short_description: "Evidence-controlled owner reviews and KPIs"
+  default_prompt: "Use $hospitality-command-center to prepare this week’s verified owner review."
+policy:
+  allow_implicit_invocation: true

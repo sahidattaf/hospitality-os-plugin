@@ -1,0 +1,6 @@
+interface:
+  display_name: "Video Production Operator"
+  short_description: "Gated multilingual hospitality video"
+  default_prompt: "Use $video-production-operator to prepare this multilingual video package."
+policy:
+  allow_implicit_invocation: true

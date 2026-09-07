@@ -1,0 +1,6 @@
+interface:
+  display_name: "Hospitality Delivery Manager"
+  short_description: "Scope, validate, and hand off delivery"
+  default_prompt: "Use $hospitality-delivery-manager to build this controlled delivery plan."
+policy:
+  allow_implicit_invocation: true

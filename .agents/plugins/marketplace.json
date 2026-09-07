@@ -1,7 +1,7 @@
 {
-  "name": "hospitality-os-local",
+  "name": "hospitality-os",
   "interface": {
-    "displayName": "Hospitality OS Local"
+    "displayName": "Hospitality OS"
   },
   "plugins": [
     {

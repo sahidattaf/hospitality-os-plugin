@@ -1,0 +1,6 @@
+interface:
+  display_name: "Hospitality Market Intelligence"
+  short_description: "Current hospitality market evidence"
+  default_prompt: "Use $hospitality-market-intelligence to research this market decision with citations."
+policy:
+  allow_implicit_invocation: true
