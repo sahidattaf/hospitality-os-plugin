@@ -1,0 +1,58 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hospitality-os-plugin",
+  "version": "0.5.1",
+  "description": "Evidence-controlled hospitality planning, analysis, and drafts for restaurants, hotels, guest service, events, inventory, revenue, and owner reviews.",
+  "author": {
+    "name": "GPT Innovation by Attaf",
+    "url": "https://github.com/sahidattaf"
+  },
+  "homepage": "https://github.com/sahidattaf/hospitality-os-plugin",
+  "repository": "https://github.com/sahidattaf/hospitality-os-plugin",
+  "license": "MIT",
+  "keywords": [
+    "hospitality",
+    "restaurants",
+    "hotels",
+    "bossa",
+    "curacao",
+    "operations",
+    "revenue",
+    "reservations",
+    "events",
+    "menu",
+    "guest-experience",
+    "video-production",
+    "owner-gates",
+    "evidence-control"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Hospitality OS",
+        "shortDescription": "Hospitality planning & drafts",
+        "longDescription": "Twelve focused workflows help hospitality owners prepare reviews, qualify leads, plan catering, answer guest inquiries, cost menus, forecast stock, test revenue ideas, research markets, manage delivery, write SOPs, train teams, and package multilingual videos. The package supplies instructions and resources. Live records and actions require separately available, authenticated tools and the owner's authorization.",
+        "developerName": "GPT Innovation by Attaf",
+        "category": "Productivity",
+        "capabilities": [
+          "Owner reviews",
+          "Hospitality planning",
+          "Menu and inventory analysis",
+          "Guest and sales drafts",
+          "Multilingual video packages"
+        ],
+        "brandColor": "#0F766E",
+        "brandColorDark": "#5EEAD4",
+        "composerIcon": "./assets/composer-icon.svg",
+        "composerIconDark": "./assets/composer-icon-dark.svg",
+        "logo": "./assets/logo.svg",
+        "logoDark": "./assets/logo-dark.svg",
+        "defaultPrompt": [
+          "Prepare my weekly hospitality owner review from verified evidence.",
+          "Cost this proposed menu product and flag missing recipe inputs.",
+          "Qualify this hospitality lead and prepare an outreach draft."
+        ]
+      }
+    }
+  }
+}

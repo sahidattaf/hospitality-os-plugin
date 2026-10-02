@@ -48,7 +48,7 @@ Do not use this skill to impersonate a person without authorization, fabricate t
 
 1. Classify the request by objective: reservations, leads, awareness, training, guest service, recovery, or demo.
 2. Check that the offer, facts, audience, CTA, language, and destination are defined.
-3. Route missing commercial information back to the Sales Operator, Event Booking Agent, or client owner.
+3. Route missing commercial information to `hospitality-sales-operator` for prospecting, `events-catering-operator` for event or catering terms, or the client owner for authoritative facts.
 4. Generate three hooks and one production-ready spoken script.
 5. Produce on-screen text, subtitles, visual direction, B-roll requirements, caption, and thumbnail copy.
 6. Localize for the requested market instead of translating word-for-word.
@@ -60,16 +60,22 @@ Do not use this skill to impersonate a person without authorization, fabricate t
 
 ## Routing
 
-- Social distribution → Social Media Agent
-- Restaurant prospecting → Restaurant Outreach Agent
-- Hotel prospecting → Hotel Outreach Agent
-- Catering offer → Catering Sales Agent
-- Private event → Event Booking Agent
-- Demo asset → Demo Producer
-- Staff explainer → Staff Training Agent
-- Guest-facing assistant → AI Concierge
-- Complaint recovery → Customer Recovery Agent
-- BOSSA campaign → appropriate BOSSA specialization agent
+Use the current skill identifiers below. A handoff carries the brief, evidence status, missing inputs, and authorization boundary; it grants no account access or execution permission.
+
+| Need | Current workflow |
+| --- | --- |
+| Video captions, thumbnail copy, and channel packaging | Continue in `video-production-operator`; a dated, multi-channel social calendar is outside the packaged workflow |
+| Restaurant or hotel prospecting | [hospitality-sales-operator](../hospitality-sales-operator/SKILL.md) |
+| Catering offer or private event terms | [events-catering-operator](../events-catering-operator/SKILL.md) |
+| Demo delivery, broken CTA, or lead flow | [hospitality-delivery-manager](../hospitality-delivery-manager/SKILL.md) |
+| Staff explainer or training content | [sop-training-operator](../sop-training-operator/SKILL.md) |
+| Guest welcome, concierge content, or complaint recovery | [guest-experience-operator](../guest-experience-operator/SKILL.md) |
+| Booking inquiry or reservation qualification | [guest-sales-reservations](../guest-sales-reservations/SKILL.md) |
+| BOSSA product or menu facts | [menu-product-operator](../menu-product-operator/SKILL.md) |
+| BOSSA stock or forecast facts | [inventory-forecast-operator](../inventory-forecast-operator/SKILL.md) |
+| BOSSA campaign priorities or owner decisions | [hospitality-command-center](../hospitality-command-center/SKILL.md) |
+
+For an unsupported workflow, return the missing scope to the owner instead of naming an unavailable agent.
 
 ## Output format
 

@@ -1,4 +1,4 @@
-# Video Production Agent Validation
+# Video Production Operator Validation
 
 ## Test 1 — Complete restaurant brief
 
@@ -19,7 +19,7 @@ Create a catering promotion video, but no capacity, price, minimum order, lead t
 Expected:
 - Flags missing commercial facts
 - Does not invent terms
-- Routes missing details to Catering Sales Agent or client owner
+- Routes missing details to `events-catering-operator` or client owner, carrying evidence status and the draft-only authorization boundary
 - Keeps the job before production approval
 
 ## Test 3 — Unauthorized avatar

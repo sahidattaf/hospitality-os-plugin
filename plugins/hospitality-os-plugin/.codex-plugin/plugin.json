@@ -1,14 +1,13 @@
 {
   "name": "hospitality-os-plugin",
-  "version": "0.5.0",
-  "description": "Evidence-controlled hospitality planning, drafting, analysis, and owner-gated execution for restaurants, hotels, events, guest operations, and BOSSA Asado i Mar.",
+  "version": "0.5.1",
+  "description": "Evidence-controlled hospitality planning, analysis, and drafts for restaurants, hotels, guest service, events, inventory, revenue, and owner reviews.",
   "author": {
     "name": "GPT Innovation by Attaf",
     "url": "https://github.com/sahidattaf"
   },
   "homepage": "https://github.com/sahidattaf/hospitality-os-plugin",
   "repository": "https://github.com/sahidattaf/hospitality-os-plugin",
-  "skills": "./skills/",
   "license": "MIT",
   "keywords": [
     "hospitality",
@@ -26,24 +25,30 @@
     "owner-gates",
     "evidence-control"
   ],
+  "skills": "./skills/",
   "interface": {
     "displayName": "Hospitality OS",
-    "shortDescription": "Run evidence-controlled hospitality workflows.",
-    "longDescription": "Hospitality OS gives Codex 12 focused Skills for restaurant, hotel, event, menu, guest, revenue, delivery, training, market, inventory, command-center, and multilingual video workflows. It drafts by default and requires explicit owner gates before external or irreversible actions.",
+    "shortDescription": "Hospitality planning & drafts",
+    "longDescription": "Twelve focused workflows help hospitality owners prepare reviews, qualify leads, plan catering, answer guest inquiries, cost menus, forecast stock, test revenue ideas, research markets, manage delivery, write SOPs, train teams, and package multilingual videos. The package supplies instructions and resources. Live records and actions require separately available, authenticated tools and the owner's authorization.",
     "developerName": "GPT Innovation by Attaf",
     "category": "Productivity",
     "capabilities": [
-      "Research",
-      "Planning",
-      "Analysis",
-      "Drafting",
-      "Gated Execution"
+      "Owner reviews",
+      "Hospitality planning",
+      "Menu and inventory analysis",
+      "Guest and sales drafts",
+      "Multilingual video packages"
     ],
     "brandColor": "#0F766E",
+    "brandColorDark": "#5EEAD4",
+    "composerIcon": "./assets/composer-icon.svg",
+    "composerIconDark": "./assets/composer-icon-dark.svg",
+    "logo": "./assets/logo.svg",
+    "logoDark": "./assets/logo-dark.svg",
     "defaultPrompt": [
-      "Prepare this week’s verified hospitality owner review.",
-      "Cost and validate this menu product without publishing.",
-      "Qualify this hospitality lead and draft the outreach."
+      "Prepare my weekly hospitality owner review from verified evidence.",
+      "Cost this proposed menu product and flag missing recipe inputs.",
+      "Qualify this hospitality lead and prepare an outreach draft."
     ]
   }
 }

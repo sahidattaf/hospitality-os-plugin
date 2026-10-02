@@ -26,9 +26,9 @@ Discovery Needed → Brief Ready → Script Draft → Internal Review → Client
 - Human or client approval is mandatory before public release.
 
 ## Failure routing
-- Missing offer details → Sales Operator or client owner
-- Missing event details → Event Booking Agent
-- Weak distribution plan → Social Media Agent
+- Missing prospecting details → [hospitality-sales-operator](../../hospitality-sales-operator/SKILL.md) or client owner
+- Missing event or catering details → [events-catering-operator](../../events-catering-operator/SKILL.md)
+- Missing captions or channel packaging → `video-production-operator`; return dated multi-channel calendar requirements to the owner
 - Language uncertainty → approved human reviewer
-- Broken destination or lead flow → Delivery Manager
-- Negative guest situation → Customer Recovery Agent
+- Broken destination or lead flow → [hospitality-delivery-manager](../../hospitality-delivery-manager/SKILL.md)
+- Negative guest situation → [guest-experience-operator](../../guest-experience-operator/SKILL.md)
