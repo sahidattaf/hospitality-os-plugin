@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512" role="img" aria-label="Hospitality OS draft mark">
+  <rect width="512" height="512" rx="112" fill="#0F766E"/>
+  <path d="M144 140h56v96h112v-96h56v240h-56v-92H200v92h-56z" fill="#F7FBF7"/>
+  <path d="M116 402c40-22 64-22 104 0s64 22 104 0 64-22 92-6" fill="none" stroke="#D8B46B" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="256" cy="100" r="16" fill="#D8B46B"/>
+</svg>

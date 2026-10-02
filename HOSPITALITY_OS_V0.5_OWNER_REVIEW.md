@@ -1,4 +1,6 @@
-# Hospitality OS Plugin v0.5 — Owner Review Package
+# Hospitality OS Plugin v0.5 — Historical Owner Review Package
+
+This document preserves the original v0.5 review record. The consolidation later merged through [PR #3](https://github.com/sahidattaf/hospitality-os-plugin/pull/3) on September 7, 2026, at `3667a4209b832a5bfe888f4430c2efe7f6fcd3c2`. The unchecked checklist and validation claims below reflect the original review; they do not establish installation, publication, or acceptance of the subsequent 0.5.1 candidate. See [CHANGELOG.md](CHANGELOG.md) for that candidate's scope.
 
 ## Review status
 
@@ -6,7 +8,7 @@
 - Base commit: `b59f7ca6ee00087d81c12c28ac59d553d595a15a`
 - Version: `0.5.0`
 - Scope: repository implementation and local validation only
-- Operational effect: none; the plugin is not installed, published, merged, or deployed
+- Operational effect at review creation: none; installation, publication, merge, and deployment were outside that implementation gate. The repository merge subsequently occurred through PR #3; this record does not verify installation or deployment.
 
 ## Owner decision summary
 
@@ -53,9 +55,9 @@ The Skills may research, analyze, plan, calculate, and draft within supplied aut
 
 The repository does not bundle account access. Skills may route to available Notion, Google, GitHub, or Vercel connectors only when the connector is present and the action is separately authorized. WhatsApp, POS, reservation, purchasing, and inventory systems remain draft-or-evidence workflows unless a future approved integration is added.
 
-## Validation evidence
+## Historical validation record
 
-The following local checks passed before commit:
+The original review reported the following local checks before its commit. These are historical claims, not the 0.5.1 validation record:
 
 - Hospitality OS structural validator: 12 Skills passed
 - Video fixture validator: valid fixture accepted and invalid fixture rejected
@@ -72,8 +74,8 @@ The following local checks passed before commit:
 - [ ] Approve proceeding to pull-request and CI review
 - [ ] Keep installation, merge, and deployment separately gated
 
-## Recommended next gate
+## Historical next gate
 
 `OWNER GATE HOSPITALITY-PLUGIN-V05-4 — APPROVE PULL REQUEST CREATION, REMOTE CI OBSERVATION, AND OWNER REVIEW ONLY.`
 
-This proposed gate must not authorize merge, installation, publication, deployment, or operational-system changes.
+This was the pre-PR proposal. PR #3 subsequently supplied the pull-request and merge record. It is not a current approval request; future 0.5.1 push, PR, installation, or publication scope must be established separately.
