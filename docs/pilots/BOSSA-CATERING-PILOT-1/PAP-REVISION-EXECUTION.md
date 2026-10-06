@@ -1,3 +1,13 @@
+# Current review attribution — BOSSA-CATERING-PILOT-1
+
+Owner-reported synthetic closure: PASS, self-assessed. Existing PAP prose preserved; reader-facing labels translated. No independent language review established.
+
+Correction authorized by Sahid Attaf on 2026-10-05 (America/Kralendijk). Current counts remain 15 PASS / 0 FAIL / 0 BLOCKED execution records across 12 numbered cases. T09-PAP closure is owner-reported and self-assessed; it does not establish an independent language review or whole-draft language acceptance. Actual intake readiness remains NEEDS_INFORMATION. All operational exclusions remain in force.
+
+## Preserved historical report — superseded review attribution
+
+The following original report is retained verbatim. Its human-language-review attributions and references to “current” disposition describe the historical record and are superseded by the correction above.
+
 # PAP label revision execution history — 2026-10-05
 
 Command, from acceptance-lab workspace:
