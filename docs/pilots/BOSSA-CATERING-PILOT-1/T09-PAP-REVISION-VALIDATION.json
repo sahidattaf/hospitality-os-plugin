@@ -3,17 +3,16 @@
   "revision": "label-only-1",
   "date": "2026-10-05",
   "result": "PASS",
-  "assessment": "self-assessed; human language confirmation recorded separately",
+  "assessment": "owner-reported synthetic closure; manual/self-assessed; no independent language review established",
   "historical_result": "BLOCKED",
-  "json_capture_state_notice": "The revised JSON retains all original values, including capture-time language_review BLOCKED_PENDING_HUMAN_REVIEW. Current closure is this separate supplement, not an overwrite of history.",
+  "json_capture_state_notice": "The revised JSON retains all original values, including capture-time language_review BLOCKED_PENDING_HUMAN_REVIEW. Owner-reported self-assessed closure is this separate supplement, not an overwrite of history.",
   "owner_review": {
     "reviewer": "Sahid Attaf",
     "role": "Owner / pilot decision owner",
     "date": "2026-10-05",
-    "evidence_source": "Direct user statements in this acceptance chat",
-    "confirmation": "Sahid Attaf confirms that the proposed Papiamentu corrections sound natural for BOSSA.",
-    "clarification": "For T09-PAP, confirm that the existing Papiamentu prose stays unchanged. Only translate the reader-facing labels. Do not alter the prose. Proceed to unblock T09-PAP and finalize the pilot.",
-    "scope": "Owner human language confirmation for existing PAP prose; translated labels and technical checks remain manual/self-assessed. Not independent evaluation of the full pilot."
+    "evidence_source": "Direct owner report of synthetic closure and subsequent attribution correction",
+    "confirmation": "Owner-reported synthetic closure: PASS, self-assessed. Existing PAP prose preserved; reader-facing labels translated. No independent language review established.",
+    "scope": "Synthetic closure only. No independent language review or whole-draft language acceptance established."
   },
   "label_changes": [
     {
@@ -172,5 +171,14 @@
     "FAIL": 0,
     "BLOCKED": 0
   },
-  "count_reconciliation": "11 single-run numbered cases + T09 with four language variants = 15 records across 12 numbered cases. PAP revision supersedes the effective result; it does not add a sixteenth case."
+  "count_reconciliation": "11 single-run numbered cases + T09 with four language variants = 15 records across 12 numbered cases. PAP revision supersedes the effective result; it does not add a sixteenth case.",
+  "historical_owner_review": {
+    "reviewer": "Sahid Attaf",
+    "role": "Owner / pilot decision owner",
+    "date": "2026-10-05",
+    "evidence_source": "Direct user statements in this acceptance chat",
+    "confirmation": "Sahid Attaf confirms that the proposed Papiamentu corrections sound natural for BOSSA.",
+    "clarification": "For T09-PAP, confirm that the existing Papiamentu prose stays unchanged. Only translate the reader-facing labels. Do not alter the prose. Proceed to unblock T09-PAP and finalize the pilot.",
+    "scope": "Owner human language confirmation for existing PAP prose; translated labels and technical checks remain manual/self-assessed. Not independent evaluation of the full pilot."
+  }
 }
