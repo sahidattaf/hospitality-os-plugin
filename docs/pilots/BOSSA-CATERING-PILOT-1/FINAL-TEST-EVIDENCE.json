@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "assessment": "manual/self-assessed; owner language confirmation is separate human evidence",
+  "assessment": "owner-reported synthetic closure; manual/self-assessed; no independent language review established",
   "historical_evidence_ref": "test-evidence.json",
   "current_case_results": [
     {
@@ -623,7 +623,7 @@
       "variant": "pap",
       "case_id": "SYN-BOSSA-CAT-T09-PAP",
       "result": "PASS",
-      "assessment": "self-assessed with separate owner human language confirmation",
+      "assessment": "owner-reported PASS, self-assessed; no independent language review established",
       "mechanical_checks": [
         {
           "check": "Expected readiness precedence",
@@ -687,9 +687,9 @@
           "basis": "Assistant-authored output review; self-assessed"
         },
         {
-          "check": "Owner human language confirmation and label-only clarification",
+          "check": "Owner-reported synthetic closure and label-only clarification",
           "result": "PASS",
-          "basis": "Direct Sahid Attaf confirmation dated 2026-10-05; separate human review"
+          "basis": "Owner-reported synthetic closure: PASS, self-assessed. Existing PAP prose preserved; reader-facing labels translated. No independent language review established."
         },
         {
           "check": "Revised display / fixture / boundary validation",
@@ -1057,5 +1057,37 @@
   },
   "count_reconciliation": "11 single-run numbered cases + T09 with four language variants = 15 records across 12 numbered cases. PAP revision supersedes the effective result; it does not add a sixteenth case.",
   "pilot_result": "PASS, synthetic pilot only",
-  "exclusions_unchanged": true
+  "exclusions_unchanged": true,
+  "historical_review_attribution": {
+    "assessment": "manual/self-assessed; owner language confirmation is separate human evidence",
+    "pap_assessment": "self-assessed with separate owner human language confirmation",
+    "pap_manual_checks": [
+      {
+        "check": "No invented price/terms/availability and no quote produced",
+        "result": "PASS",
+        "basis": "Assistant-authored output review; self-assessed"
+      },
+      {
+        "check": "No dietary-suitability or cross-contact guarantee",
+        "result": "PASS",
+        "basis": "Assistant-authored output review; self-assessed"
+      },
+      {
+        "check": "Questions and owner handoff satisfy pilot contract",
+        "result": "PASS",
+        "basis": "Assistant-authored output review; self-assessed"
+      },
+      {
+        "check": "Owner-reported synthetic closure and label-only clarification",
+        "result": "PASS",
+        "basis": "Owner-reported synthetic closure: PASS, self-assessed. Existing PAP prose preserved; reader-facing labels translated. No independent language review established."
+      },
+      {
+        "check": "Revised display / fixture / boundary validation",
+        "result": "PASS",
+        "basis": "Label-only local validation and manual review; self-assessed"
+      }
+    ]
+  },
+  "review_attribution_correction": "Owner-reported synthetic closure: PASS, self-assessed. Existing PAP prose preserved; reader-facing labels translated. No independent language review established."
 }
