@@ -1,0 +1,258 @@
+{
+  "identity": {
+    "case_id": "SYN-BOSSA-CAT-T09-PAP",
+    "project_id": "BOSSA",
+    "specification_version": "draft 1.0",
+    "skill": "hospitality-os-plugin:events-catering-operator",
+    "skill_version": "0.5.1",
+    "execution_method": "manual instruction-guided pilot wrapper; self-assessed"
+  },
+  "evidence_envelope": {
+    "synthetic": true,
+    "live_verified_evidence": [],
+    "source_refs": [
+      {
+        "id": "FIX-T09-PAP",
+        "type": "Synthetic fixture",
+        "fields": [
+          "project_id",
+          "data_mode",
+          "language",
+          "request_text",
+          "guest_count",
+          "location_label",
+          "service_mode",
+          "food_preferences",
+          "dietary_requirements"
+        ]
+      }
+    ],
+    "classifications": [
+      {
+        "field": "project_id",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "data_mode",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "language",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "request_text",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "guest_count",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "service_date",
+        "classification": "Missing evidence",
+        "source_ref": null
+      },
+      {
+        "field": "service_time",
+        "classification": "Missing evidence",
+        "source_ref": null
+      },
+      {
+        "field": "location_label",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "service_mode",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "food_preferences",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "dietary_requirements",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "budget",
+        "classification": "Missing evidence",
+        "source_ref": null
+      },
+      {
+        "field": "case_id",
+        "classification": "Synthetic fixture",
+        "source_ref": "FIX-T09-PAP"
+      },
+      {
+        "field": "capacity/pricing/fees/deposit/cancellation/availability/delivery coverage",
+        "classification": "Missing evidence",
+        "source_ref": null
+      }
+    ],
+    "conflicts": []
+  },
+  "intake": {
+    "project_id": "BOSSA",
+    "data_mode": "synthetic",
+    "language": "pap",
+    "request_text": "Petishon fikshonal: kuminda pa 12 invitado na Example Villa C, ku entrega. Kuminda di estilo karibense; un invitado ta reportá alergia pa marisku. Fecha i ora no ta disidí ainda.",
+    "guest_count": 12,
+    "service_date": null,
+    "service_time": null,
+    "location_label": "Example Villa C",
+    "service_mode": "delivery",
+    "food_preferences": [
+      "Caribbean-style"
+    ],
+    "dietary_requirements": [
+      "Reported shellfish allergy; kitchen review required"
+    ],
+    "budget": null,
+    "case_id": "SYN-BOSSA-CAT-T09-PAP",
+    "evidence_refs": [
+      {
+        "id": "FIX-T09-PAP",
+        "type": "Synthetic fixture",
+        "fields": [
+          "project_id",
+          "data_mode",
+          "language",
+          "request_text",
+          "guest_count",
+          "location_label",
+          "service_mode",
+          "food_preferences",
+          "dietary_requirements"
+        ]
+      }
+    ],
+    "timezone": "America/Kralendijk",
+    "original_request_ref": "FIX-T09-PAP:request_text"
+  },
+  "readiness": "NEEDS_INFORMATION",
+  "missing_information": [
+    {
+      "field": "service_date",
+      "reason": "Required intake evidence unavailable",
+      "priority": "required",
+      "question": "Pa ki fecha bo ta pidi e servisio?"
+    },
+    {
+      "field": "service_time",
+      "reason": "Required intake evidence unavailable",
+      "priority": "required",
+      "question": "Na ki ora bo ta pidi e servisio, den zona di tempu America/Kralendijk?"
+    },
+    {
+      "field": "location_details",
+      "reason": "Required intake evidence unavailable",
+      "priority": "required",
+      "question": "Kua detaye adishonal di e lugá fikshonal i akseso mester pa evalua entrega?"
+    },
+    {
+      "field": "budget",
+      "reason": "Required intake evidence unavailable",
+      "priority": "optional",
+      "question": "Si bo ke, kua ta e suma di e presupuesto fikshonal, e moneda i si e ta total òf pa persona?"
+    }
+  ],
+  "invalid_inputs": [],
+  "risks": [
+    "Kushina mester revisá e alergia reportá pa marisku; no tin garantia di seguridat pa alergia òf kontakto krusá.",
+    "Area di entrega, logístika i disponibilidat no ta konfirmá.",
+    "No tin evidensia aprobá pa kapasidat, preis, kostonan òf términonan komersial."
+  ],
+  "owner_handoff": {
+    "summary": "Pa revishon interno di e dueño so. Pidi e informashon ku ta falta i mantené e nota di alergia. Revishon di kushina, entrega i términonan komersial ta nesesario promé ku un desishon operashonal.",
+    "dietary_requirements": [
+      "Reported shellfish allergy; kitchen review required"
+    ],
+    "open_decisions": [
+      {
+        "field": "service_date",
+        "owner": "Synthetic Owner",
+        "required_evidence": "Required intake evidence unavailable",
+        "next_action": "Pa ki fecha bo ta pidi e servisio?"
+      },
+      {
+        "field": "service_time",
+        "owner": "Synthetic Owner",
+        "required_evidence": "Required intake evidence unavailable",
+        "next_action": "Na ki ora bo ta pidi e servisio, den zona di tempu America/Kralendijk?"
+      },
+      {
+        "field": "location_details",
+        "owner": "Synthetic Owner",
+        "required_evidence": "Required intake evidence unavailable",
+        "next_action": "Kua detaye adishonal di e lugá fikshonal i akseso mester pa evalua entrega?"
+      },
+      {
+        "field": "budget",
+        "owner": "Synthetic Owner",
+        "required_evidence": "Required intake evidence unavailable",
+        "next_action": "Si bo ke, kua ta e suma di e presupuesto fikshonal, e moneda i si e ta total òf pa persona?"
+      },
+      {
+        "field": "dietary_requirements",
+        "owner": "Revisor sintétiko di kushina",
+        "required_evidence": "Revishon kalifiká di e alergia reportá i e kondishonnan di preparashon",
+        "next_action": "Revisá e rekisito dietétiko; no primintí siguridat"
+      },
+      {
+        "field": "logistics",
+        "owner": "Revisor sintétiko di logístika",
+        "required_evidence": "Evalua kapasidat, modo di servisio i entrega ku fecha",
+        "next_action": "Revisá logístika sin konfirmá area di entrega"
+      },
+      {
+        "field": "commercial_terms",
+        "owner": "Dueño sintétiko",
+        "required_evidence": "Fuente aktual aprobá pa preis i términonan; no ta disponibel den e piloto",
+        "next_action": "Dehá oferta di preis i desishonnan komersial pafó di e piloto"
+      }
+    ],
+    "held_requests": []
+  },
+  "action_record": {
+    "permitted_actions_performed": [
+      "Validate fictional intake",
+      "Draft internal questions",
+      "Draft owner handoff",
+      "Write local synthetic evidence"
+    ],
+    "external_actions_performed": []
+  },
+  "limitations": [
+    "Borador so. No tin preis, kapasidat, area di entrega òf reserva konfirmá. No ta inkluí un mensahe pa manda ni un oferta di preis.",
+    "Not a quote, reservation or outbound message. No external action or operational confirmation."
+  ],
+  "human_readable": {
+    "summary": "BORADOR INTERNO SINTÉTIKO: petishon pa BOSSA ku entrega pa 12 invitado na e lugá fikshonal Example Villa C; preferensia pa kuminda di estilo karibense. Un invitado ta reportá alergia pa marisku. Fecha i ora no ta konosí.",
+    "risks": [
+      "Kushina mester revisá e alergia reportá pa marisku; no tin garantia di seguridat pa alergia òf kontakto krusá.",
+      "Area di entrega, logístika i disponibilidat no ta konfirmá.",
+      "No tin evidensia aprobá pa kapasidat, preis, kostonan òf términonan komersial."
+    ],
+    "handoff": "Pa revishon interno di e dueño so. Pidi e informashon ku ta falta i mantené e nota di alergia. Revishon di kushina, entrega i términonan komersial ta nesesario promé ku un desishon operashonal.",
+    "limits": "Borador so. No tin preis, kapasidat, area di entrega òf reserva konfirmá. No ta inkluí un mensahe pa manda ni un oferta di preis."
+  },
+  "language_review": {
+    "language": "pap",
+    "status": "BLOCKED_PENDING_HUMAN_REVIEW",
+    "note": "Papiamentu spelling/register and full semantic equivalence require human review; unavailable in this run."
+  },
+  "next_owner_gate": "Owner review of local synthetic results only. Any later live use requires a new exact data/access/action gate; repository documentation is not authorized today.",
+  "validation_performed": [
+    "Manual field/source/control review; local invariant checks are recorded separately."
+  ]
+}

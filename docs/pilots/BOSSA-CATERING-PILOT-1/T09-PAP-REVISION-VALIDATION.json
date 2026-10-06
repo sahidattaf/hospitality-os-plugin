@@ -1,0 +1,184 @@
+{
+  "case_id": "SYN-BOSSA-CAT-T09-PAP",
+  "revision": "label-only-1",
+  "date": "2026-10-05",
+  "result": "PASS",
+  "assessment": "owner-reported synthetic closure; manual/self-assessed; no independent language review established",
+  "historical_result": "BLOCKED",
+  "json_capture_state_notice": "The revised JSON retains all original values, including capture-time language_review BLOCKED_PENDING_HUMAN_REVIEW. Owner-reported self-assessed closure is this separate supplement, not an overwrite of history.",
+  "owner_review": {
+    "reviewer": "Sahid Attaf",
+    "role": "Owner / pilot decision owner",
+    "date": "2026-10-05",
+    "evidence_source": "Direct owner report of synthetic closure and subsequent attribution correction",
+    "confirmation": "Owner-reported synthetic closure: PASS, self-assessed. Existing PAP prose preserved; reader-facing labels translated. No independent language review established.",
+    "scope": "Synthetic closure only. No independent language review or whole-draft language acceptance established."
+  },
+  "label_changes": [
+    {
+      "original_label": "Readiness:",
+      "translated_label": "Preparashon:",
+      "occurrences": 1
+    },
+    {
+      "original_label": "Language: pap.",
+      "translated_label": "Idioma: pap.",
+      "occurrences": 1
+    },
+    {
+      "original_label": "(required)",
+      "translated_label": "(nesesario)",
+      "occurrences": 3
+    },
+    {
+      "original_label": "(optional)",
+      "translated_label": "(opsional)",
+      "occurrences": 1
+    },
+    {
+      "original_label": "Synthetic Owner:",
+      "translated_label": "Dueño sintétiko:",
+      "occurrences": 4
+    },
+    {
+      "original_label": "Evidence:",
+      "translated_label": "Evidensia:",
+      "occurrences": 7
+    },
+    {
+      "original_label": "Required intake evidence unavailable",
+      "translated_label": "Evidensia nesesario pa intake no ta disponibel",
+      "occurrences": 4
+    },
+    {
+      "original_label": "Normalized field (raw fixture values)",
+      "translated_label": "Kampo normalisá (balornan original di fixture)",
+      "occurrences": 1
+    },
+    {
+      "original_label": "| Value |",
+      "translated_label": "| Balor |",
+      "occurrences": 1
+    },
+    {
+      "original_label": "Original request/source record:",
+      "translated_label": "Petishon original/registro di fuente:",
+      "occurrences": 1
+    },
+    {
+      "original_label": "JSON evidence classifications and conflict values:",
+      "translated_label": "Klasifikashonnan di evidensia i balornan di konflikto den JSON:",
+      "occurrences": 1
+    }
+  ],
+  "checks": [
+    {
+      "check": "Equivalent JSON preserves every original key and value",
+      "result": "PASS"
+    },
+    {
+      "check": "All raw fixture fields preserved",
+      "result": "PASS"
+    },
+    {
+      "check": "Case/project/source identifiers preserved",
+      "result": "PASS"
+    },
+    {
+      "check": "Existing PAP prose, questions, risks and handoff retained verbatim",
+      "result": "PASS"
+    },
+    {
+      "check": "Display changes limited to declared labels",
+      "result": "PASS"
+    },
+    {
+      "check": "12 guests and fictional location unchanged",
+      "result": "PASS"
+    },
+    {
+      "check": "Unknown date/time/budget preserved without intake-date substitution",
+      "result": "PASS"
+    },
+    {
+      "check": "Dietary requirement retained for kitchen review",
+      "result": "PASS"
+    },
+    {
+      "check": "Intake readiness not upgraded to operational confirmation",
+      "result": "PASS"
+    },
+    {
+      "check": "No duplicated questions and optional budget retained",
+      "result": "PASS"
+    },
+    {
+      "check": "No live verification or external actions",
+      "result": "PASS"
+    },
+    {
+      "check": "No new commercial facts, guarantees or cross-project leakage",
+      "result": "PASS"
+    },
+    {
+      "check": "Specification has 12 numbered cases",
+      "result": "PASS"
+    },
+    {
+      "check": "15 records explained solely by T09 language expansion",
+      "result": "PASS"
+    },
+    {
+      "check": "Historical PAP blocked record preserved",
+      "result": "PASS"
+    },
+    {
+      "check": "Source and installed package bytes unchanged",
+      "result": "PASS"
+    },
+    {
+      "check": "Original artifacts unchanged after separate revision",
+      "result": "PASS"
+    }
+  ],
+  "external_actions_performed": [],
+  "original_artifact_hashes": {
+    "BOSSA-CATERING-PILOT-1-SPEC.md": "D40E030E1F6F5745A20747006AE859F7A7D53900BA14FC6EFF27506719362028",
+    "CONTRACT-REVIEW.md": "BC0771D63B76BC0221401B8C0F5337F239DCB1DE49D2242521DB6D36861F7C76",
+    "EXECUTION-LOG.md": "1E0CC6F3DBEC239AC2A76F34F75D7B4E3747928FE236C2B71323F2C03E4D04AE",
+    "fixtures.json": "134F5CA5AD712C007793A4237D3D9B8E0F6B9E21FC3B7E10F9837C213C833C79",
+    "outputs.json": "9FDB44AE4258F69406698226F31E2F75597F5BC8353974CD5EDEF6A86C63171B",
+    "OUTPUTS.md": "7FE3D84A81791919FC6739B0D1AA0F512F37D9EEB600BDC7DA85B487A0E66756",
+    "run-synthetic-pilot.py": "8FEB4263155EFA778D15EB597630EEDF06209D0BB7B578095E235A307CB53375",
+    "test-evidence.json": "82B4535478778DFE41F1ABD6270B2D8C04CA41F26DDE3533B2A269F3E294EE30"
+  },
+  "revised_output_hashes": {
+    "T09-PAP-REVISED.json": "DC97F19E609485B3E8F81564034FE50C61715928CF9F7F8CF1463CBEB6594B85",
+    "T09-PAP-REVISED.md": "363E8D555195661AF69DC4E92454F1FFB900D25F4FE26FD6C5F3294256A6A4BE"
+  },
+  "historical_counts": {
+    "PASS": 14,
+    "FAIL": 0,
+    "BLOCKED": 1
+  },
+  "current_counts": {
+    "PASS": 15,
+    "FAIL": 0,
+    "BLOCKED": 0
+  },
+  "numbered_case_counts": {
+    "PASS": 12,
+    "FAIL": 0,
+    "BLOCKED": 0
+  },
+  "count_reconciliation": "11 single-run numbered cases + T09 with four language variants = 15 records across 12 numbered cases. PAP revision supersedes the effective result; it does not add a sixteenth case.",
+  "historical_owner_review": {
+    "reviewer": "Sahid Attaf",
+    "role": "Owner / pilot decision owner",
+    "date": "2026-10-05",
+    "evidence_source": "Direct user statements in this acceptance chat",
+    "confirmation": "Sahid Attaf confirms that the proposed Papiamentu corrections sound natural for BOSSA.",
+    "clarification": "For T09-PAP, confirm that the existing Papiamentu prose stays unchanged. Only translate the reader-facing labels. Do not alter the prose. Proceed to unblock T09-PAP and finalize the pilot.",
+    "scope": "Owner human language confirmation for existing PAP prose; translated labels and technical checks remain manual/self-assessed. Not independent evaluation of the full pilot."
+  }
+}
