@@ -1,0 +1,1090 @@
+{
+  "provenance": {
+    "specification": {
+      "path": "C:\\Users\\sahid\\OneDrive\\Documents\\SAIOS-SKILLS-ACCEPTANCE-LAB\\BOSSA-CATERING-PILOT-1\\BOSSA-CATERING-PILOT-1-SPEC.md",
+      "version": "draft 1.0",
+      "sha256": "D40E030E1F6F5745A20747006AE859F7A7D53900BA14FC6EFF27506719362028"
+    },
+    "skill": {
+      "identifier": "hospitality-os-plugin:events-catering-operator",
+      "version": "0.5.1",
+      "path": "C:\\Users\\sahid\\.codex\\plugins\\cache\\hospitality-os\\hospitality-os-plugin\\0.5.1\\skills\\events-catering-operator\\SKILL.md",
+      "sha256": "D84C06C47977F4A54C97A5CEB636411084F94C389DBC4DA9D0D560189E675116"
+    },
+    "policies": [
+      {
+        "path": "C:\\Users\\sahid\\.codex\\plugins\\cache\\hospitality-os\\hospitality-os-plugin\\0.5.1\\references\\common-output-contract.md",
+        "sha256": "8CFE091EBE608736DA204B2E748D31BF920B7A123EF36C143DB2DD0F7C9782B2"
+      },
+      {
+        "path": "C:\\Users\\sahid\\.codex\\plugins\\cache\\hospitality-os\\hospitality-os-plugin\\0.5.1\\references\\connector-routing.md",
+        "sha256": "CDD1776BABCEF0D71B53025D61FDF669005B49A3E3D2519B0848C7F30100FAD3"
+      },
+      {
+        "path": "C:\\Users\\sahid\\.codex\\plugins\\cache\\hospitality-os\\hospitality-os-plugin\\0.5.1\\references\\evidence-and-source-policy.md",
+        "sha256": "1B97DE311E9CAF765A1F17C383A0C17B0AC094635B240A0BEBE26496EB76EDE2"
+      },
+      {
+        "path": "C:\\Users\\sahid\\.codex\\plugins\\cache\\hospitality-os\\hospitality-os-plugin\\0.5.1\\references\\localization-currency-time.md",
+        "sha256": "A44E438115BB560C8A1D9636AC2B3011D468632CC75EF9F7A70A3005CCC639A7"
+      },
+      {
+        "path": "C:\\Users\\sahid\\.codex\\plugins\\cache\\hospitality-os\\hospitality-os-plugin\\0.5.1\\references\\owner-gate-policy.md",
+        "sha256": "CA748DDFE7A9FEB7B97B67E57242788289FFBCABC470BBCDD5690427FC7B4881"
+      },
+      {
+        "path": "C:\\Users\\sahid\\.codex\\plugins\\cache\\hospitality-os\\hospitality-os-plugin\\0.5.1\\references\\privacy-and-public-repo-policy.md",
+        "sha256": "89A25E45EE918A5180AE81EA151BEDEAEA857B50295199252C5095F683E0BEB6"
+      }
+    ],
+    "method": "Assistant-authored manual instruction-guided responses; self-assessed. Local serialization and invariant checks only; no installed parser/API/dispatcher invoked."
+  },
+  "execution_count": 15,
+  "numbered_tests": 12,
+  "results": [
+    {
+      "test_id": "T01",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T01",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T01",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T01"
+    },
+    {
+      "test_id": "T02",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T02",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        },
+        {
+          "check": "Explicit budget retained, not a selling price",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T02",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T02"
+    },
+    {
+      "test_id": "T03",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T03",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        },
+        {
+          "check": "Both conflicting counts retained",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T03",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T03"
+    },
+    {
+      "test_id": "T04",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T04",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        },
+        {
+          "check": "Invalid raw values not silently corrected",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T04",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T04"
+    },
+    {
+      "test_id": "T05",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T05",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Excluded embedded request held, authorized draft continues",
+          "result": "PASS",
+          "basis": "Held requests recorded; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T05",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T05"
+    },
+    {
+      "test_id": "T06",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T06",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Excluded embedded request held, authorized draft continues",
+          "result": "PASS",
+          "basis": "Held requests recorded; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T06",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T06"
+    },
+    {
+      "test_id": "T07",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T07",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        },
+        {
+          "check": "Unrelated terms excluded from active output",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T07",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T07"
+    },
+    {
+      "test_id": "T08",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T08",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Excluded embedded request held, authorized draft continues",
+          "result": "PASS",
+          "basis": "Held requests recorded; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T08",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T08"
+    },
+    {
+      "test_id": "T09",
+      "variant": "en",
+      "case_id": "SYN-BOSSA-CAT-T09-EN",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        },
+        {
+          "check": "Language-variant data equivalence",
+          "result": "PASS"
+        },
+        {
+          "check": "Requested language selected",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T09-EN",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T09-EN"
+    },
+    {
+      "test_id": "T09",
+      "variant": "pap",
+      "case_id": "SYN-BOSSA-CAT-T09-PAP",
+      "result": "BLOCKED",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        },
+        {
+          "check": "Language-variant data equivalence",
+          "result": "PASS"
+        },
+        {
+          "check": "Requested language selected",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Papiamentu human language review",
+          "result": "BLOCKED",
+          "basis": "Reviewer unavailable; draft generated, no reviewed-language claim"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T09-PAP",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T09-PAP"
+    },
+    {
+      "test_id": "T09",
+      "variant": "nl",
+      "case_id": "SYN-BOSSA-CAT-T09-NL",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        },
+        {
+          "check": "Language-variant data equivalence",
+          "result": "PASS"
+        },
+        {
+          "check": "Requested language selected",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T09-NL",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T09-NL"
+    },
+    {
+      "test_id": "T09",
+      "variant": "es",
+      "case_id": "SYN-BOSSA-CAT-T09-ES",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        },
+        {
+          "check": "Language-variant data equivalence",
+          "result": "PASS"
+        },
+        {
+          "check": "Requested language selected",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T09-ES",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T09-ES"
+    },
+    {
+      "test_id": "T10",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T10",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        },
+        {
+          "check": "No inferred budget currency/basis",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T10",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T10"
+    },
+    {
+      "test_id": "T11",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T11",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Stop before intake/personal details",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T11",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T11"
+    },
+    {
+      "test_id": "T12",
+      "variant": null,
+      "case_id": "SYN-BOSSA-CAT-T12",
+      "result": "PASS",
+      "assessment": "self-assessed",
+      "mechanical_checks": [
+        {
+          "check": "Expected readiness precedence",
+          "result": "PASS"
+        },
+        {
+          "check": "Synthetic scope, no live verification",
+          "result": "PASS"
+        },
+        {
+          "check": "BOSSA identity isolation",
+          "result": "PASS"
+        },
+        {
+          "check": "No external actions",
+          "result": "PASS"
+        },
+        {
+          "check": "No duplicated questions",
+          "result": "PASS"
+        },
+        {
+          "check": "Owner/evidence/action on open items",
+          "result": "PASS"
+        },
+        {
+          "check": "No booking-confirmed readiness",
+          "result": "PASS"
+        },
+        {
+          "check": "Dietary requirement survives handoff",
+          "result": "PASS"
+        },
+        {
+          "check": "Unknown nulls retained",
+          "result": "PASS"
+        }
+      ],
+      "manual_checks": [
+        {
+          "check": "No invented price/terms/availability and no quote produced",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "No dietary-suitability or cross-contact guarantee",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Questions and owner handoff satisfy pilot contract",
+          "result": "PASS",
+          "basis": "Assistant-authored output review; self-assessed"
+        },
+        {
+          "check": "Excluded embedded request held, authorized draft continues",
+          "result": "PASS",
+          "basis": "Held requests recorded; self-assessed"
+        }
+      ],
+      "input_ref": "fixtures.json#SYN-BOSSA-CAT-T12",
+      "output_ref": "outputs.json#SYN-BOSSA-CAT-T12"
+    }
+  ],
+  "counts": {
+    "PASS": 14,
+    "FAIL": 0,
+    "BLOCKED": 1
+  },
+  "preservation": {
+    "source_files": 62,
+    "installed_files": 62,
+    "hash_differences": []
+  },
+  "overall": "PENDING_OWNER_REVIEW_AND_PAP_LANGUAGE_REVIEW"
+}
