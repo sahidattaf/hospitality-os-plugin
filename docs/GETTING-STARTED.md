@@ -12,10 +12,10 @@ Hospitality OS supplies 12 skills, shared instructions, examples, and schemas. I
 | Plugin identity | `hospitality-os-plugin` |
 | Installation key | `hospitality-os-plugin@hospitality-os` |
 | Plugin root | `plugins/hospitality-os-plugin/` |
-| Local candidate | `0.5.1` |
-| Audited main version | `0.5.0` at `3667a4209b832a5bfe888f4430c2efe7f6fcd3c2` |
+| Current remote package, verified 2026-10-12 | `0.5.1` on `main` at `5942d49c9d57b36f297815d693440f5b5a97087c` |
+| Historical audited main version | `0.5.0` at `3667a4209b832a5bfe888f4430c2efe7f6fcd3c2` |
 
-The instructions below are a future installation runbook. `HOSPITALITY-PLUGIN-MARKETPLACE-2` authorizes source edits and local validation only. No installation command was run under that gate.
+The instructions below are an installation and refresh runbook. Remote `main` now contains `0.5.1`; verify the actual installed and loaded package separately. Historically, `HOSPITALITY-PLUGIN-MARKETPLACE-2` authorized source edits and local validation only, and no installation command was run under that gate. The 12 October source review does not itself establish local installation acceptance.
 
 ## Codex CLI
 
@@ -34,7 +34,7 @@ codex plugin marketplace list
 codex
 ```
 
-In the Codex session, open `/plugins`, select the `hospitality-os` marketplace, and install `hospitality-os-plugin`. Confirm the displayed package version and installation key. `--ref main` retrieves remote main; until the candidate is merged, that remains the audited 0.5.0 package. Use the explicitly accepted branch, tag, or commit ref for a candidate test when supported by the installed CLI.
+In the Codex session, open `/plugins`, select the `hospitality-os` marketplace, and install `hospitality-os-plugin`. Confirm the displayed package version and installation key. `--ref main` retrieves the current remote main, which was verified to contain `0.5.1` on 12 October 2026. Confirm the ref and package version again at installation time; use an explicitly accepted branch, tag, or commit ref for reproducible testing when supported by the installed CLI.
 
 For a separately authorized local candidate test, run this from the directory containing the checkout:
 
