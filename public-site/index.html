@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hospitality OS</title>
+<meta name="description" content="An evidence-controlled AI operating system for restaurants, hotels, and event venues.">
+<style>
+  :root {
+    --bg: #070d1f;
+    --bg-2: #0b1530;
+    --card: #0f1c3d;
+    --border: #1c2e5c;
+    --text: #e6edf8;
+    --muted: #8fa3c7;
+    --cyan: #22d3ee;
+    --cyan-soft: rgba(34, 211, 238, 0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 120px 24px 96px;
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(34, 211, 238, 0.18), transparent 70%),
+      linear-gradient(180deg, var(--bg-2), var(--bg));
+    border-bottom: 1px solid var(--border);
+  }
+  .badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--cyan-soft);
+    color: var(--cyan);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: clamp(2.8rem, 8vw, 5.5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    background: linear-gradient(135deg, #ffffff 30%, var(--cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .sub {
+    max-width: 640px;
+    margin: 24px auto 40px;
+    font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+    color: var(--muted);
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 10px;
+    background: var(--cyan);
+    color: #04202a;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 0 32px rgba(34, 211, 238, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 0 44px rgba(34, 211, 238, 0.55); }
+  .btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  section { max-width: 1120px; margin: 0 auto; padding: 88px 24px; }
+  h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); letter-spacing: -0.02em; text-align: center; }
+  .lead { text-align: center; color: var(--muted); max-width: 600px; margin: 12px auto 48px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  .card:hover { border-color: var(--cyan); transform: translateY(-3px); }
+  .num { color: var(--cyan); font-size: 13px; font-weight: 700; letter-spacing: 0.1em; }
+  .card h3 { margin: 6px 0 8px; font-size: 1.1rem; }
+  .card p { color: var(--muted); font-size: 0.93rem; }
+  .cta { text-align: center; border-top: 1px solid var(--border); }
+  .cta p { color: var(--muted); margin: 12px 0 32px; }
+  footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); }
+  @media (max-width: 520px) { .hero { padding: 80px 20px 64px; } section { padding: 64px 20px; } }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <span class="badge">Evidence-controlled AI</span>
+    <h1>Hospitality OS</h1>
+    <p class="sub">An evidence-controlled AI operating system for restaurants, hotels, and event venues.</p>
+    <a class="btn" href="https://github.com/sahidattaf/hospitality-os-plugin" target="_blank" rel="noopener">View Documentation</a>
+  </header>
+
+  <section id="skills">
+    <h2>12 Focused Skills</h2>
+    <p class="lead">Each skill drafts by default and requires an explicit owner gate before anything external happens.</p>
+    <div class="grid">
+      <div class="card"><span class="num">01</span><h3>Hospitality Command Center</h3><p>Daily and weekly owner reviews, KPIs, priorities, and decisions.</p></div>
+      <div class="card"><span class="num">02</span><h3>Hospitality Sales Operator</h3><p>Lead qualification, outreach, proposals, and objection handling.</p></div>
+      <div class="card"><span class="num">03</span><h3>Events &amp; Catering Operator</h3><p>Catering quotes and private-event packages with deposits and terms.</p></div>
+      <div class="card"><span class="num">04</span><h3>Guest Sales &amp; Reservations</h3><p>Inquiries, bookings, waitlists, cancellations, and upsells.</p></div>
+      <div class="card"><span class="num">05</span><h3>Guest Experience Operator</h3><p>Concierge answers, review replies, and complaint recovery.</p></div>
+      <div class="card"><span class="num">06</span><h3>Menu &amp; Product Operator</h3><p>Menu design, costing, pricing, and fire-grill concepts.</p></div>
+      <div class="card"><span class="num">07</span><h3>Inventory &amp; Forecast Operator</h3><p>Par levels, waste, stockout risk, and demand-based order plans.</p></div>
+      <div class="card"><span class="num">08</span><h3>Revenue Optimizer</h3><p>Pricing, occupancy, menu mix, and yield opportunities.</p></div>
+      <div class="card"><span class="num">09</span><h3>Hospitality Market Intelligence</h3><p>Cited research on competitors, demand, events, and sentiment.</p></div>
+      <div class="card"><span class="num">10</span><h3>Hospitality Delivery Manager</h3><p>Scoped delivery plans, milestones, and controlled handoffs.</p></div>
+      <div class="card"><span class="num">11</span><h3>SOP &amp; Training Operator</h3><p>SOPs, onboarding modules, checklists, and audit criteria.</p></div>
+      <div class="card"><span class="num">12</span><h3>Video Production Operator</h3><p>Multilingual campaign and video packages with release gates.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to explore?</h2>
+    <p>Read the full documentation, skills, and examples on GitHub.</p>
+    <a class="btn" href="https://github.com/sahidattaf/hospitality-os-plugin" target="_blank" rel="noopener">View Documentation</a>
+  </section>
+
+  <footer>&copy; Hospitality OS &middot; GPT Innovation by Attaf</footer>
+</body>
+</html>
