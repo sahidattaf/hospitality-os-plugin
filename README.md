@@ -84,7 +84,7 @@ CI runs the same package checks, 17 regression tests, and both fixture checks. T
 
 ## Local marketplace installation
 
-Use the [getting-started guide](docs/GETTING-STARTED.md) for the verified CLI and workspace routes. The 0.5.1 changes are a local candidate until separately accepted and made available remotely. Adding `main` before that step retrieves the existing 0.5.0 package.
+Use the [getting-started guide](docs/GETTING-STARTED.md) for the verified CLI and workspace routes. As verified on 12 October 2026, remote `main` at `5942d49c9d57b36f297815d693440f5b5a97087c` contains package version `0.5.1`. The earlier `0.5.0` remote reference is historical. Remote availability does not establish the version installed or loaded on a user's device.
 
 Installation, refresh, workspace import, and public submission are outside `HOSPITALITY-PLUGIN-MARKETPLACE-2`. After a separately approved install or refresh, start a new Codex thread and run synthetic acceptance checks before using live business evidence.
 
