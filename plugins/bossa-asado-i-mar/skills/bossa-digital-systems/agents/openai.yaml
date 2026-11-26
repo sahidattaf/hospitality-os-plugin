@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Website & Internal OS"
+  short_description: "Route and inspect BOSSA public website versus internal Hospi"
+  default_prompt: "Use $bossa-digital-systems to inspect the correct BOSSA repository read-only and report the minimum change."

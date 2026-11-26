@@ -1,0 +1,21 @@
+{
+  "name": "bossa-asado-i-mar",
+  "version": "0.1.0",
+  "description": "Twelve evidence-aware BOSSA workflows for Phase 0 opening readiness, restaurant operations and separated public/internal digital systems.",
+  "author": {
+    "name": "sahid attaf"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Review BOSSA evidence and give me three owner priorities.",
+      "Prepare a BOSSA Fire Box costing and kitchen-test packet.",
+      "Inspect the correct BOSSA repository read-only and report gaps."
+    ],
+    "developerName": "sahid attaf",
+    "displayName": "BOSSA Asado i Mar — Command Center",
+    "longDescription": "An owner command center plus eleven specialist workflows for rebuild/licensing, menu costing, fire kitchen, inventory, guests, catering, marketing, finance, staff SOPs, digital systems and evidence governance. Uses separately available connected tools, respects exact owner gates and verifies phase before live-operation claims.",
+    "shortDescription": "BOSSA owner & operations"
+  }
+}

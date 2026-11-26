@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Menu & Costing"
+  short_description: "Cost BOSSA recipes, breads and Fire Boxes from the authorita"
+  default_prompt: "Use $bossa-menu-costing to cost a BOSSA Fire Box from verified ingredients and yields."

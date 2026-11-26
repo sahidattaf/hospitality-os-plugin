@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Inventory & Suppliers"
+  short_description: "Review BOSSA stock evidence, ingredient purchasing, reorder"
+  default_prompt: "Use $bossa-inventory-suppliers to review BOSSA stock gaps and prepare a reorder proposal."

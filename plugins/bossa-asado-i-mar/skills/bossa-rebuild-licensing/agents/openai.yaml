@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Rebuild & Licensing"
+  short_description: "Review BOSSA Phase 0 survey, rebuild dependencies, licensing"
+  default_prompt: "Use $bossa-rebuild-licensing to review the survey and licensing gaps before BOSSA opening."

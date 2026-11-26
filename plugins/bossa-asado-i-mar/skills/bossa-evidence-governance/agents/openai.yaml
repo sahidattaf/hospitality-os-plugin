@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Evidence & Decisions"
+  short_description: "Reconcile BOSSA conflicting records, source freshness, accep"
+  default_prompt: "Use $bossa-evidence-governance to check BOSSA evidence and my exact owner gate before the next action."

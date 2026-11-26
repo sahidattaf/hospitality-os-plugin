@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Guests & Reservations"
+  short_description: "Handle BOSSA guest questions, WhatsApp conversion, reservati"
+  default_prompt: "Use $bossa-guests-reservations to prepare a BOSSA guest reply and verify the reservation status."
