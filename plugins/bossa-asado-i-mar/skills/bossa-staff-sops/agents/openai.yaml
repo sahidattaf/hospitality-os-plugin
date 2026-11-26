@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Staff & SOPs"
+  short_description: "Prepare BOSSA training, staff-task plans, opening/closing se"
+  default_prompt: "Use $bossa-staff-sops to prepare a BOSSA staff readiness checklist and controlled SOP draft."

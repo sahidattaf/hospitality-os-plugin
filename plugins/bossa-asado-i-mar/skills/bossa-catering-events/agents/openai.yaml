@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Catering & Events"
+  short_description: "Qualify BOSSA party and catering leads, propose menus for co"
+  default_prompt: "Use $bossa-catering-events to prepare a BOSSA catering menu and costing packet for owner review."

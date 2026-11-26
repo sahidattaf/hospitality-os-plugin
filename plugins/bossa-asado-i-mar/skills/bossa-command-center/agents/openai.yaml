@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Owner Command Center"
+  short_description: "Triage BOSSA owner requests, daily priorities, cross-workstr"
+  default_prompt: "Use $bossa-command-center to review BOSSA and propose my next three priorities."

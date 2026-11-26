@@ -43,6 +43,12 @@ The plugin root includes a portable manifest with OpenAI listing metadata in `ex
 
 Business-specific modes include generic hospitality, BOSSA Asado i Mar, Sea Horizon Apartments, and a future named client when an authoritative client profile is supplied. Business facts are not hard-coded as current truth.
 
+## BOSSA Command Center source package
+
+The separately maintained [BOSSA Asado i Mar — Command Center](plugins/bossa-asado-i-mar/README.md) is stored under `plugins/bossa-asado-i-mar/`. It contains its own portable/native manifests and twelve BOSSA-specific skills for opening readiness, restaurant workflows, digital systems and evidence governance. It preserves the existing Hospitality OS package and its twelve-skill baseline.
+
+This is a public source export with private source identifiers and personal paths removed. The marketplace entry and existing private ChatGPT plugin remain unchanged; uploading these sources does not install or activate them. See the package notes for source provenance and verification limits.
+
 ## Safety model
 
 - Classify facts as Verified, Owner-provided, Assumption, Conflict, or Missing evidence.

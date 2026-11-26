@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Marketing & Content"
+  short_description: "Build BOSSA multilingual campaigns, Fire Box promotions, soc"
+  default_prompt: "Use $bossa-marketing-content to build an owner-review BOSSA Fire Box campaign with authentic assets."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Finance & Analytics"
+  short_description: "Analyze BOSSA documented expenses, budgets, sales, deposits"
+  default_prompt: "Use $bossa-finance-analytics to review BOSSA financial evidence and show the material gaps."

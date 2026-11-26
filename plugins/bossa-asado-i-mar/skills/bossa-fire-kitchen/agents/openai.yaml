@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSSA Fire & Kitchen"
+  short_description: "Prepare BOSSA bread, Fire Box, grill, sauce and Sour Bar tes"
+  default_prompt: "Use $bossa-fire-kitchen to prepare the next BOSSA bread and Fire Box kitchen test."
